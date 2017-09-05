@@ -1,0 +1,89 @@
+$cement-lite: #bba7a0;
+$cement-dark: #382d31;
+$black: #131126;
+$green: #258119;
+$yellow: #e1c943;
+
+body {
+  background: $black;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.horizon {
+  height: 90%;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient($black, $green);
+}
+
+.road {
+  width: 15%;
+  height: 100%;
+  background: linear-gradient($black, $cement-lite);
+  margin: 0 auto;
+  transform: perspective(200px) rotateX(45deg);
+  border: 6px solid #fff;
+  border-top: 0;
+  border-bottom: 0
+}
+
+.headlights {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1000;
+
+  &::before {
+    content: "";
+    width: 100%;
+    position: absolute;
+    right: 50%;
+    bottom: 0;
+    height: 100%;
+    background: radial-gradient(circle at bottom right 4%, rgba(0, 0, 0, 0), $black 15%)
+  }
+
+   &::after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    right: -50%;
+    bottom: 0;
+    height: 100%;
+    background: radial-gradient(circle at bottom left 4%, rgba(0, 0, 0, 0), $black 15%)
+  }
+}
+
+.divider {
+  width: 3%;
+  height: 100%;
+  z-index: 1000;
+  position: relative;
+  left: 48%;
+  display: inline-block;
+  animation: drive linear 1.5s;
+  animation-iteration-count: infinite;
+}
+
+.sm {
+  width: 100%;
+  height: 10%;
+  background: $yellow;
+  margin-top: 2500%;
+}
+
+.sm:first-of-type {
+  margin-top: 0;
+}
+
+@keyframes drive {
+  0% {transform: translateY(0px);}
+  100% {transform: translateY(100%);}
+}

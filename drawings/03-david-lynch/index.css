@@ -1,0 +1,86 @@
+body {
+  background: #131126;
+  margin: 0;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.horizon {
+  height: 90%;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(#131126, #258119);
+}
+
+.road {
+  width: 15%;
+  height: 100%;
+  background: linear-gradient(#131126, #bba7a0);
+  margin: 0 auto;
+  transform: perspective(200px) rotateX(45deg);
+  border: 6px solid #fff;
+  border-top: 0;
+  border-bottom: 0;
+}
+
+.headlights {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1000;
+}
+.headlights::before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  right: 50%;
+  bottom: 0;
+  height: 100%;
+  background: radial-gradient(circle at bottom right 10%, rgba(0, 0, 0, 0), #131126 15%);
+}
+.headlights::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  right: -50%;
+  bottom: 0;
+  height: 100%;
+  background: radial-gradient(circle at bottom left 10%, rgba(0, 0, 0, 0), #131126 15%);
+}
+
+.divider {
+  width: 3%;
+  height: 100%;
+  z-index: 1000;
+  position: relative;
+  left: 48%;
+  display: inline-block;
+  animation: drive linear 1.5s;
+  animation-iteration-count: infinite;
+}
+
+.sm {
+  width: 100%;
+  height: 10%;
+  background: #e1c943;
+  margin-top: 5000%;
+}
+
+.sm:first-of-type {
+  margin-top: 0;
+}
+
+@keyframes drive {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
