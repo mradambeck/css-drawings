@@ -7,3 +7,5 @@ A collection of drawings made in CSS.
 * [Elephant](https://mradambeck.github.io/css-drawings/drawings/02-elephant/)
 
 * [A David Lynch scene](https://mradambeck.github.io/css-drawings/drawings/03-david-lynch/)
+
+* [George Washington](https://mradambeck.github.io/css-drawings/drawings/04-george-washington/)
