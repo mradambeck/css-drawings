@@ -15,15 +15,22 @@ body {
   position: absolute;
   bottom: 0;
   width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#131126), to(#258119));
+  background: -webkit-linear-gradient(#131126, #258119);
+  background: -o-linear-gradient(#131126, #258119);
   background: linear-gradient(#131126, #258119);
 }
 
 .road {
   width: 15%;
   height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#131126), to(#bba7a0));
+  background: -webkit-linear-gradient(#131126, #bba7a0);
+  background: -o-linear-gradient(#131126, #bba7a0);
   background: linear-gradient(#131126, #bba7a0);
   margin: 0 auto;
-  transform: perspective(200px) rotateX(45deg);
+  -webkit-transform: perspective(200px) rotateX(45deg);
+          transform: perspective(200px) rotateX(45deg);
   border: 6px solid #fff;
   border-top: 0;
   border-bottom: 0;
@@ -42,6 +49,8 @@ body {
   right: 50%;
   bottom: 0;
   height: 100%;
+  background: -webkit-radial-gradient(bottom right 10%, circle, rgba(0, 0, 0, 0), #131126 15%);
+  background: -o-radial-gradient(bottom right 10%, circle, rgba(0, 0, 0, 0), #131126 15%);
   background: radial-gradient(circle at bottom right 10%, rgba(0, 0, 0, 0), #131126 15%);
 }
 .headlights::after {
@@ -51,6 +60,8 @@ body {
   right: -50%;
   bottom: 0;
   height: 100%;
+  background: -webkit-radial-gradient(bottom left 10%, circle, rgba(0, 0, 0, 0), #131126 15%);
+  background: -o-radial-gradient(bottom left 10%, circle, rgba(0, 0, 0, 0), #131126 15%);
   background: radial-gradient(circle at bottom left 10%, rgba(0, 0, 0, 0), #131126 15%);
 }
 
@@ -61,8 +72,10 @@ body {
   position: relative;
   left: 48%;
   display: inline-block;
-  animation: drive linear 1.5s;
-  animation-iteration-count: infinite;
+  -webkit-animation: drive linear 1.5s;
+          animation: drive linear 1.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 .sm {
@@ -76,11 +89,24 @@ body {
   margin-top: 0;
 }
 
-@keyframes drive {
+@-webkit-keyframes drive {
   0% {
-    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
   }
   100% {
-    transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+}
+
+@keyframes drive {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
   }
 }

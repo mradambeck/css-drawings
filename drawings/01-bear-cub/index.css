@@ -98,7 +98,9 @@ body {
   margin: auto;
   bottom: 25%;
   border-radius: 20% 15% 70%;
-  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+      -ms-transform: rotate(-135deg);
+          transform: rotate(-135deg);
 }
 
 .mouth {

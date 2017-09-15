@@ -7,6 +7,8 @@
   border-radius: 50%;
   margin: 0px auto;
   height: 370px;
+  background: -webkit-radial-gradient(center, circle, #4f452c, #201909);
+  background: -o-radial-gradient(center, circle, #4f452c, #201909);
   background: radial-gradient(circle at center, #4f452c, #201909);
   overflow: hidden;
   z-index: 1;
@@ -34,17 +36,24 @@
   right: 0;
   margin: 0 auto;
   border-radius: 100% 20% 0 0;
+  background: -webkit-linear-gradient(15deg, #0b0a06, #1f1c11);
+  background: -o-linear-gradient(15deg, #0b0a06, #1f1c11);
   background: linear-gradient(75deg, #0b0a06, #1f1c11);
   z-index: -1;
 }
 
 .shirt {
+  background: -webkit-gradient(linear, left bottom, left top, from(#fff2e1), to(#fdfcc6));
+  background: -webkit-linear-gradient(bottom, #fff2e1, #fdfcc6);
+  background: -o-linear-gradient(bottom, #fff2e1, #fdfcc6);
   background: linear-gradient(0deg, #fff2e1, #fdfcc6);
   width: 35%;
   height: 30%;
   position: absolute;
   border-radius: 20% 10% 80% 30%;
-  transform: skew(-10deg) rotate(-10deg);
+  -webkit-transform: skew(-10deg) rotate(-10deg);
+      -ms-transform: skew(-10deg) rotate(-10deg);
+          transform: skew(-10deg) rotate(-10deg);
   left: 36%;
   top: -25%;
   overflow: hidden;
@@ -54,18 +63,24 @@
   position: absolute;
   width: 120%;
   height: 150%;
+  background: -webkit-linear-gradient(45deg, #342a21, #433021);
+  background: -o-linear-gradient(45deg, #342a21, #433021);
   background: linear-gradient(45deg, #342a21, #433021);
   opacity: .8;
   border-radius: 50%;
   top: -73%;
   left: -10%;
-  transform: rotate(40deg);
+  -webkit-transform: rotate(40deg);
+      -ms-transform: rotate(40deg);
+          transform: rotate(40deg);
 }
 
 .head {
   overflow: hidden;
   width: 34%;
   height: 44%;
+  background: -webkit-linear-gradient(330deg, #ffeba2, #fcbe81);
+  background: -o-linear-gradient(330deg, #ffeba2, #fcbe81);
   background: linear-gradient(120deg, #ffeba2, #fcbe81);
   top: 3%;
   position: relative;
@@ -79,6 +94,8 @@
   position: absolute;
   width: 20%;
   height: 23%;
+  background: -webkit-radial-gradient(rgba(232, 105, 66, 0.5), rgba(232, 105, 66, 0));
+  background: -o-radial-gradient(rgba(232, 105, 66, 0.5), rgba(232, 105, 66, 0));
   background: radial-gradient(rgba(232, 105, 66, 0.5), rgba(232, 105, 66, 0));
   border-radius: 40%;
   top: 51%;
@@ -100,20 +117,27 @@
   bottom: 20%;
   position: absolute;
   left: 15%;
-  transform: rotate(3deg);
+  -webkit-transform: rotate(3deg);
+      -ms-transform: rotate(3deg);
+          transform: rotate(3deg);
   border-radius: 50% 0 0 50%;
-  box-shadow: 0px 2px 3px 1px #d78354;
+  -webkit-box-shadow: 0px 2px 3px 1px #d78354;
+          box-shadow: 0px 2px 3px 1px #d78354;
 }
 .mouth::before {
   content: '';
   width: 120%;
   height: 1800%;
+  background: -webkit-radial-gradient(rgba(203, 157, 98, 0), rgba(218, 175, 120, 0.3));
+  background: -o-radial-gradient(rgba(203, 157, 98, 0), rgba(218, 175, 120, 0.3));
   background: radial-gradient(rgba(203, 157, 98, 0), rgba(218, 175, 120, 0.3));
   position: absolute;
   bottom: -900%;
   left: -10%;
   border-radius: 30% 50% 40% 30%;
-  transform: skewY(-2deg);
+  -webkit-transform: skewY(-2deg);
+      -ms-transform: skewY(-2deg);
+          transform: skewY(-2deg);
 }
 
 .eye {
@@ -121,6 +145,8 @@
   top: 35%;
   height: 20%;
   width: 20%;
+  background: -webkit-radial-gradient(rgba(210, 156, 92, 0.5), rgba(210, 156, 92, 0));
+  background: -o-radial-gradient(rgba(210, 156, 92, 0.5), rgba(210, 156, 92, 0));
   background: radial-gradient(rgba(210, 156, 92, 0.5), rgba(210, 156, 92, 0));
   left: 2%;
   border-radius: 30% 65% 5% 10%;
@@ -144,6 +170,8 @@
   content: '';
   height: 100%;
   width: 100%;
+  background: -webkit-radial-gradient(#44312a, #4f5679);
+  background: -o-radial-gradient(#44312a, #4f5679);
   background: radial-gradient(#44312a, #4f5679);
   position: absolute;
   left: 30%;
@@ -158,9 +186,12 @@
   position: absolute;
   left: 19%;
   top: 40%;
+  background: -webkit-linear-gradient(65deg, rgba(244, 171, 120, 0.75), rgba(244, 171, 120, 0));
+  background: -o-linear-gradient(65deg, rgba(244, 171, 120, 0.75), rgba(244, 171, 120, 0));
   background: linear-gradient(25deg, rgba(244, 171, 120, 0.75), rgba(244, 171, 120, 0));
   border-radius: 100% 30% 40% 50%;
-  box-shadow: -3px 1px 1px 0px rgba(127, 71, 48, 0.15);
+  -webkit-box-shadow: -3px 1px 1px 0px rgba(127, 71, 48, 0.15);
+          box-shadow: -3px 1px 1px 0px rgba(127, 71, 48, 0.15);
 }
 .nose::after {
   content: '';
@@ -169,27 +200,37 @@
   left: -14%;
   height: 30%;
   width: 45%;
+  background: -webkit-radial-gradient(rgba(255, 255, 255, 0.3), rgba(254, 209, 150, 0));
+  background: -o-radial-gradient(rgba(255, 255, 255, 0.3), rgba(254, 209, 150, 0));
   background: radial-gradient(rgba(255, 255, 255, 0.3), rgba(254, 209, 150, 0));
   border-radius: 50%;
 }
 
 .eyebrow.right {
+  background: -webkit-linear-gradient(45deg, rgba(111, 66, 43, 0.8), rgba(162, 112, 75, 0.1));
+  background: -o-linear-gradient(45deg, rgba(111, 66, 43, 0.8), rgba(162, 112, 75, 0.1));
   background: linear-gradient(45deg, rgba(111, 66, 43, 0.8), rgba(162, 112, 75, 0.1));
   height: 20%;
   width: 80%;
   position: absolute;
-  transform: skewY(-15deg);
+  -webkit-transform: skewY(-15deg);
+      -ms-transform: skewY(-15deg);
+          transform: skewY(-15deg);
   top: 4%;
   border-radius: 20% 60% 10% 60%;
   left: 2%;
 }
 
 .eyebrow.left {
+  background: -webkit-linear-gradient(135deg, rgba(111, 66, 43, 0.8), rgba(162, 112, 75, 0.1));
+  background: -o-linear-gradient(135deg, rgba(111, 66, 43, 0.8), rgba(162, 112, 75, 0.1));
   background: linear-gradient(-45deg, rgba(111, 66, 43, 0.8), rgba(162, 112, 75, 0.1));
   height: 20%;
   width: 70%;
   position: absolute;
-  transform: skewY(5deg);
+  -webkit-transform: skewY(5deg);
+      -ms-transform: skewY(5deg);
+          transform: skewY(5deg);
   top: 8%;
   right: -3%;
   border-radius: 20% 30% 10% 60%;
@@ -199,6 +240,8 @@
   position: absolute;
   width: 40%;
   height: 30%;
+  background: -webkit-radial-gradient(rgba(255, 250, 178, 0.8), rgba(255, 250, 178, 0));
+  background: -o-radial-gradient(rgba(255, 250, 178, 0.8), rgba(255, 250, 178, 0));
   background: radial-gradient(rgba(255, 250, 178, 0.8), rgba(255, 250, 178, 0));
   top: 8%;
   left: 18%;
@@ -209,6 +252,8 @@
   position: absolute;
   width: 24%;
   height: 10%;
+  background: -webkit-radial-gradient(#f4ab78, rgba(244, 171, 120, 0));
+  background: -o-radial-gradient(#f4ab78, rgba(244, 171, 120, 0));
   background: radial-gradient(#f4ab78, rgba(244, 171, 120, 0));
   border-radius: 50%;
   bottom: 1%;
@@ -219,10 +264,14 @@
   position: absolute;
   height: 48%;
   width: 30%;
+  background: -webkit-linear-gradient(330deg, rgba(170, 112, 62, 0), rgba(152, 84, 47, 0.3));
+  background: -o-linear-gradient(330deg, rgba(170, 112, 62, 0), rgba(152, 84, 47, 0.3));
   background: linear-gradient(120deg, rgba(170, 112, 62, 0), rgba(152, 84, 47, 0.3));
   right: 6%;
   bottom: 0;
-  transform: skewX(-4deg);
+  -webkit-transform: skewX(-4deg);
+      -ms-transform: skewX(-4deg);
+          transform: skewX(-4deg);
   border-radius: 50% 10% 100% 40%;
 }
 .shadow::after {
@@ -234,7 +283,11 @@
   bottom: -5%;
   left: -100%;
   border-radius: 100% 0 0 1000%;
-  transform: rotate(-10deg);
+  -webkit-transform: rotate(-10deg);
+      -ms-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+  background: -webkit-linear-gradient(330deg, rgba(170, 112, 62, 0), rgba(152, 84, 47, 0.3));
+  background: -o-linear-gradient(330deg, rgba(170, 112, 62, 0), rgba(152, 84, 47, 0.3));
   background: linear-gradient(120deg, rgba(170, 112, 62, 0), rgba(152, 84, 47, 0.3));
 }
 
@@ -249,6 +302,8 @@
 }
 
 .hair-top {
+  background: -webkit-linear-gradient(45deg, rgba(253, 243, 206, 0.8), #fdf3ce);
+  background: -o-linear-gradient(45deg, rgba(253, 243, 206, 0.8), #fdf3ce);
   background: linear-gradient(45deg, rgba(253, 243, 206, 0.8), #fdf3ce);
   width: 80%;
   height: 20%;
@@ -259,6 +314,9 @@
 }
 
 .hair-right {
+  background: -webkit-gradient(linear, left bottom, left top, from(#fdf3ce), to(#fdf3ce));
+  background: -webkit-linear-gradient(bottom, #fdf3ce, #fdf3ce);
+  background: -o-linear-gradient(bottom, #fdf3ce, #fdf3ce);
   background: linear-gradient(0deg, #fdf3ce, #fdf3ce);
   width: 34%;
   height: 100%;
@@ -269,6 +327,9 @@
 }
 
 .hair-left {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(219, 209, 181, 0.6)), to(#fff8dd));
+  background: -webkit-linear-gradient(bottom, rgba(219, 209, 181, 0.6), #fff8dd);
+  background: -o-linear-gradient(bottom, rgba(219, 209, 181, 0.6), #fff8dd);
   background: linear-gradient(0deg, rgba(219, 209, 181, 0.6), #fff8dd);
   left: 0;
   top: 0;
@@ -279,13 +340,18 @@
 }
 
 .hair-curl-right {
+  background: -webkit-gradient(linear, left top, left bottom, from(#fdf3ce), to(#2d1e1b));
+  background: -webkit-linear-gradient(top, #fdf3ce, #2d1e1b);
+  background: -o-linear-gradient(top, #fdf3ce, #2d1e1b);
   background: linear-gradient(180deg, #fdf3ce, #2d1e1b);
   width: 16%;
   height: 13%;
   position: absolute;
   right: 22%;
   top: 22%;
-  transform: skewX(-10deg);
+  -webkit-transform: skewX(-10deg);
+      -ms-transform: skewX(-10deg);
+          transform: skewX(-10deg);
   border-radius: 10% 40% 100%;
   overflow: hidden;
 }
@@ -294,16 +360,24 @@
   position: absolute;
   width: 100%;
   height: 40%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#e9e1cc), to(rgba(233, 225, 204, 0.2)));
+  background: -webkit-linear-gradient(#e9e1cc, rgba(233, 225, 204, 0.2));
+  background: -o-linear-gradient(#e9e1cc, rgba(233, 225, 204, 0.2));
   background: linear-gradient(#e9e1cc, rgba(233, 225, 204, 0.2));
   top: 0;
   left: 32%;
-  transform: rotate(-8deg);
+  -webkit-transform: rotate(-8deg);
+      -ms-transform: rotate(-8deg);
+          transform: rotate(-8deg);
   border-radius: 0% 120% 10% 60%;
 }
 .hair-curl-right::after {
   content: "";
   width: 40%;
   height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fdf3ce), to(rgba(186, 175, 144, 0.1)));
+  background: -webkit-linear-gradient(#fdf3ce, rgba(186, 175, 144, 0.1));
+  background: -o-linear-gradient(#fdf3ce, rgba(186, 175, 144, 0.1));
   background: linear-gradient(#fdf3ce, rgba(186, 175, 144, 0.1));
   position: absolute;
   bottom: 0;
@@ -313,11 +387,16 @@
 .hair-curl-left {
   height: 10%;
   width: 7%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#b9b298), to(rgba(55, 40, 37, 0.9)));
+  background: -webkit-linear-gradient(#b9b298, rgba(55, 40, 37, 0.9));
+  background: -o-linear-gradient(#b9b298, rgba(55, 40, 37, 0.9));
   background: linear-gradient(#b9b298, rgba(55, 40, 37, 0.9));
   position: absolute;
   top: 22%;
   left: 29%;
   border-radius: 100% 40% 40% 60%;
-  transform: skewY(10deg);
+  -webkit-transform: skewY(10deg);
+      -ms-transform: skewY(10deg);
+          transform: skewY(10deg);
   z-index: -1;
 }
