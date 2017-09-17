@@ -11,3 +11,7 @@ A collection of drawings made in CSS.
 * [George Washington](https://mradambeck.github.io/css-drawings/drawings/04-george-washington/)
 
 * [iPhone X](https://mradambeck.github.io/css-drawings/drawings/05-iphone-x/)
+
+* [iPad Pro](https://mradambeck.github.io/css-drawings/drawings/06-ipad-pro/)
+
+* [iPhone 8](https://mradambeck.github.io/css-drawings/drawings/07-iphone-8-white/)

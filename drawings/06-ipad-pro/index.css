@@ -1,0 +1,116 @@
+.ipad-pro-portrait {
+  height: 532px;
+  width: 738px;
+  background: green;
+  margin: 30px auto;
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid white;
+}
+
+.bezel {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, white), color-stop(10%, #494a4c), color-stop(25%, #dddee0), color-stop(75%, #dddee0), color-stop(90%, #49494b), color-stop(95%, white));
+  background: -webkit-linear-gradient(top, white 5%, #494a4c 10%, #dddee0 25%, #dddee0 75%, #49494b 90%, white 95%);
+  background: -o-linear-gradient(top, white 5%, #494a4c 10%, #dddee0 25%, #dddee0 75%, #49494b 90%, white 95%);
+  background: linear-gradient(top, white 5%, #494a4c 10%, #dddee0 25%, #dddee0 75%, #49494b 90%, white 95%);
+  height: 100%;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.bezel::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 97%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  background: -webkit-gradient(linear, left top, left bottom, from(left), color-stop(0%, #525254), color-stop(13%, #dedee0), color-stop(61%, #dddee0), color-stop(95%, #545456), color-stop(99%, white), to(white));
+  background: -webkit-linear-gradient(left, #525254 0%, #dedee0 13%, #dddee0 61%, #545456 95%, white 99%, white 100%);
+  background: -o-linear-gradient(left, #525254 0%, #dedee0 13%, #dddee0 61%, #545456 95%, white 99%, white 100%);
+  background: linear-gradient(left, #525254 0%, #dedee0 13%, #dddee0 61%, #545456 95%, white 99%, white 100%);
+}
+
+.casing {
+  position: absolute;
+  width: calc(100% - 6px);
+  height: calc(100% - 6px);
+  background: #f4f5f7;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #cdcdcf;
+  border-radius: 22px;
+}
+
+.camera {
+  height: 8px;
+  width: 8px;
+  background: #11153a;
+  border-radius: 50%;
+  position: absolute;
+  left: 3.4%;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-bottom: 1px solid #0a0e33;
+}
+
+.home-btn {
+  height: 26px;
+  width: 26px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 1.8%;
+  margin: auto 0;
+  background: -webkit-linear-gradient(280deg, #404143 0%, #404143 25%, #e9eaec 38%, #e9eaec 63%, #404143 94%, #404143 100%);
+  background: -o-linear-gradient(280deg, #404143 0%, #404143 25%, #e9eaec 38%, #e9eaec 63%, #404143 94%, #404143 100%);
+  background: linear-gradient(170deg, #404143 0%, #404143 25%, #e9eaec 38%, #e9eaec 63%, #404143 94%, #404143 100%);
+  border: 1px solid #e9eaec;
+}
+.home-btn::after {
+  content: "";
+  width: calc(100% - 3px);
+  height: calc(100% - 3px);
+  border-radius: 50%;
+  background: #f4f5f7;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.screen {
+  position: absolute;
+  height: 90%;
+  width: 85%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 2px solid #292929;
+  border-radius: 2px;
+  background-size: cover;
+  background-image: -webkit-radial-gradient(top right, circle, #f9f6f2 1%, #d43f81 15%, #1d368a 60%, #f9f6f2 100%);
+  background-image: -o-radial-gradient(top right, circle, #f9f6f2 1%, #d43f81 15%, #1d368a 60%, #f9f6f2 100%);
+  background-image: radial-gradient(circle at top right, #f9f6f2 1%, #d43f81 15%, #1d368a 60%, #f9f6f2 100%);
+}
